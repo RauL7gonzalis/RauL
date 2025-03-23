@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مدرسة الفلاح الابتدائية - السودان</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: url('images/header.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+            position: relative;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            top:0; left:0; right:0; bottom:0;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+        }
+        nav {
+            background-color: #228b22;
+            padding: 10px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 16px;
+            padding: 8px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #1a6d1a;
+            border-radius: 4px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section {
+            background-color: #fff;
+            margin-bottom: 25px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            animation: fadeIn 1s ease;
+        }
+        .section img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        footer {
+            background-color: #2e8b57;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+        button {
+            background-color: #228b22;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #1a6d1a;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @media screen and (max-width: 768px) {
+            header {
+                padding: 80px 15px;
+            }
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>مدرسة الفلاح الابتدائية</h1>
+    <p>نحو مستقبل مشرق لأبنائنا في السودان</p>
+</header>
+
+<nav>
+    <a href="#home">الرئيسية</a>
+    <a href="#about">عن المدرسة</a>
+    <a href="#staff">الهيئة التدريسية</a>
+    <a href="#departments">الأقسام والأنشطة</a>
+    <a href="#contact">تواصل معنا</a>
+    <a href="#admission">التسجيل والقبول</a>
+</nav>
+
+<div class="container">
+
+    <div class="section" id="home">
+        <h2>مرحباً بكم في مدرسة الفلاح</h2>
+        <p>نفتخر بكوننا مؤسسة تعليمية تسعى لخلق بيئة تعليمية محفزة تدعم تطور الطلاب أكاديمياً وأخلاقياً.</p>
+        <img src="images/students1.jpg" alt="أطفال في مدرسة سودانية" />
+    </div>
+
+    <div class="section" id="about">
+        <h2>عن المدرسة</h2>
+        <p>تأسست مدرسة الفلاح عام 2015، وتسعى لتمكين الطلاب من اكتساب المعرفة والمهارات التي تؤهلهم ليكونوا أفراداً فاعلين في المجتمع.</p>
+        <img src="images/school_building.jpg" alt="مرافق المدرسة" />
+    </div>
+
+    <div class="section" id="staff">
+        <h2>الهيئة التدريسية</h2>
+        <p>يتكون طاقمنا من معلمين ومعلمات ذوي خبرة واسعة في التعليم، ملتزمين بتقديم أفضل ما لديهم.</p>
+        <img src="images/teachers.jpg" alt="صورة المعلمين" />
+    </div>
+
+    <div class="section" id="departments">
+        <h2>الأقسام والأنشطة</h2>
+        <ul>
+            <li>قسم اللغة العربية</li>
+            <li>قسم الرياضيات</li>
+            <li>قسم العلوم والتقنية</li>
+            <li>قسم التربية الإسلامية</li>
+            <li>نادي الفنون والرياضة</li>
+        </ul>
+        <img src="images/activities.jpg" alt="أنشطة مدرسية" />
+    </div>
+
+    <div class="section" id="contact">
+        <h2>تواصل معنا</h2>
+        <form>
+            <label for="name">الاسم:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="message">رسالتك:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+
+    <div class="section" id="admission">
+        <h2>التسجيل والقبول</h2>
+        <p>نرحب بتسجيل أبنائكم في مدرسة الفلاح. بيئة تعليمية متكاملة بإشراف نخبة من المعلمين.</p>
+        <form>
+            <label for="studentName">اسم الطالب:</label>
+            <input type="text" id="studentName" name="studentName" required />
+            <label for="age">العمر:</label>
+            <input type="number" id="age" name="age" required />
+            <label for="grade">الصف المطلوب:</label>
+            <input type="text" id="grade" name="grade" required />
+            <label for="parentName">اسم ولي الأمر:</label>
+            <input type="text" id="parentName" name="parentName" required />
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" required />
+            <button type="submit">إرسال الطلب</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 مدرسة الفلاح الابتدائية - جميع الحقوق محفوظة</p>
+    <p>تصميم: محمد أنور | raul.anwer@gmail.com</p>
+</footer>
+
+</body>
+</html>
